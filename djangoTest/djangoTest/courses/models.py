@@ -6,4 +6,7 @@ class Course(models.Model):
     numero = models.CharField(max_length=10) #duração do curso
     description = models.TextField(max_length=200)
 
-
+    def __str__(self):
+        return self.name
+    class Meta:
+        db_table= 'Course'

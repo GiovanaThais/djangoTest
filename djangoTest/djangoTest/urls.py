@@ -16,8 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 
+
 urlpatterns = [
     path('/admin/',admin.site.urls ),
     #path('core/',include('djangoTest.core.urls')),
-    path('/courses/',courses.urls ),
+    path('/courses/',include('courses.urls ')),
 ]

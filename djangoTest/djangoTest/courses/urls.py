@@ -3,8 +3,8 @@ from .views import CourseList,CourseCreate,CourseUpdate,CourseDelete
 
 
 urlpatterns = [
-    path('',CourseList,name='cursos_list'),
-    path('create/',CourseCreate,name='cursos_create')
-    path('update/<pk::int>/',CourseUpdate,name='cursos_update')
-    path('delete/<pk::int>/',CourseDelete,name='cursos_delete')
+    path('',CourseList.as_view(),name='cursos_list'),
+    path('create/',CourseCreate.as_view(),name='cursos_create')
+    path('update/<pk::int>/',CourseUpdate.as_view(),name='cursos_update')
+    path('delete/<pk::int>/',CourseDelete.as_view(),name='cursos_delete')
 ] 

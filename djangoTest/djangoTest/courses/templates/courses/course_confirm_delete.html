@@ -7,6 +7,10 @@
     <title>CourseForm</title>
 </head>
 <body>
-    {{ form }}
+    <h1>Deseja realmente apagar este cliente?</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit">Confirmar</button>
+    </form>
 </body>
 </html>
