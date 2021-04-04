@@ -11,12 +11,12 @@ class CourseList(ListView):
 class CourseCreate(CreateView):
     model = Course
     fields = ['nome','data','descricao']
-    success_url = reverse_lazy('cliente_list')
+    success_url = reverse_lazy('cursos_list')
 
 class CourseUpdate(UpdateView):
     model = Course
     fields = ['nome','data','descricao']
-    success_url = reverse_lazy('cliente_list')
+    success_url = reverse_lazy('cursos_list')
 class CourseDelete(DeleteView):
     model = Course
-    success_url = reverse_lazy('cliente_list')
+    success_url = reverse_lazy('cursos_list')
