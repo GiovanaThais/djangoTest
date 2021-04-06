@@ -3,4 +3,4 @@ from .models import Course
 
 @admin.register(Course)
 class CourseAdmin(admin.ModelAdmin):
-    list_display = ['nome','numero','descricao']
+    list_display = ['name','numero','description']
